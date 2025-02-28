@@ -1,0 +1,39 @@
+Compartment From,Compartment To,Rate
+Atmosphere,Terrestrial Fast,0.5
+Atmosphere,Terrestrial Slow,0.128
+Atmosphere,Terrestrial Protected,0.072
+Atmosphere,Ocean Surface,1.4
+Terrestrial Fast,Atmosphere,0.05732057291666666
+Terrestrial Fast,Terrestrial Slow,0.034375
+Terrestrial Fast,Terrestrial Protected,0.0010416666666666667
+Terrestrial Fast,Ocean Surface,0.012424960442708332
+Terrestrial Fast,,0.061646341640625005
+Terrestrial Slow,Atmosphere,0.001657142857142857
+Terrestrial Slow,Terrestrial Fast,0.006
+Terrestrial Slow,Terrestrial Protected,1.4285714285714285e-05
+Terrestrial Slow,Ocean Surface,8.967505857142866e-05
+Terrestrial Slow,,0.00044492208428571485
+Terrestrial Protected,Atmosphere,1.8e-05
+Terrestrial Protected,Terrestrial Fast,2.9999999999999997e-05
+Terrestrial Protected,Ocean Surface,3.4235054000000034e-06
+Terrestrial Protected,,1.698569460000002e-05
+Ocean Surface,Atmosphere,2.0
+Ocean Surface,Ocean Intermediate,2.896521739130435
+Ocean Intermediate,Ocean Surface,0.0546111111111111
+Ocean Intermediate,Ocean Deep,0.01031536
+Ocean Deep,Ocean Intermediate,0.0009209094736842105
+Ocean Deep,,0.0011578947368421054
+Waste Fast,Atmosphere,0.057320572916666666
+Waste Fast,Terrestrial Slow,0.034375
+Waste Fast,Terrestrial Protected,0.0010416666666666667
+Waste Fast,Ocean Surface,0.012424960442708332
+Waste Fast,,0.061646341640625005
+Waste Slow,Atmosphere,0.0016571428571428572
+Waste Slow,Terrestrial Fast,0.006
+Waste Slow,Terrestrial Protected,1.4285714285714285e-05
+Waste Slow,Ocean Surface,8.967505857142866e-05
+Waste Slow,,0.00044492208428571485
+Waste Protected,Atmosphere,1.8e-05
+Waste Protected,Terrestrial Fast,2.9999999999999997e-05
+Waste Protected,Ocean Surface,3.4235054000000034e-06
+Waste Protected,,1.698569460000002e-05
