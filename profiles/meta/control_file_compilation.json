@@ -1,0 +1,777 @@
+{
+    "KM1128": {
+        "metadata": {
+            "Depth [m]": "depth",
+            "Lat [deg N]": "lat",
+            "Lon [deg E]": "lon",
+            "mon/day/yr": "datetime",
+            "Station": "stationID",
+            "Cruise": "cruiseID",
+            "Reference": "reference"
+        },
+        "additional_columns": {},
+        "variables": {
+            "THg [pM]": "Hg_T"
+        },
+        "units": {
+            "Hg_T": "pmol kg-1"
+        },
+        "data_path": "../observations/KM1128_Metzyme/Munson_2015_Hg.xls"
+    },
+    "SHIPPO": {
+        "metadata": {
+            "Depth (m)": "depth",
+            "Latitude": "lat",
+            "Longitude": "lon",
+            "datetime": "datetime",
+            "SHIPPO-station": "stationID",
+            "Reference": "reference"
+        },
+        "additional_columns": {
+            "cruiseID": "SHIPPO"
+        },
+        "variables": {
+            "THg(pM)": "Hg_T"
+        },
+        "units": {
+            "Hg_T": "pmol L-1"
+        },
+        "data_path": "../observations/Kim_2016/Kim_et_al_2016_SHIPPO.xlsx"
+    },
+    "P16N": {
+        "metadata": {
+            "Depth": "depth",
+            "Lat": "lat",
+            "Lon": "lon",
+            "Datetime": "datetime",
+            "station_num": "stationID",
+            "CruiseID": "cruiseID",
+            "Reference": "reference"
+        },
+        "additional_columns": {},
+        "variables": {
+            "HgT_Conc_pM": "Hg_T"
+        },
+        "units": {
+            "Hg_T": "pmol L-1"
+        },
+        "data_path": "../observations/Sunderland_2009/Sunderland_et_al_2009.csv"
+    },
+    "JC068": {
+        "metadata": {
+            "Sample depth [m]": "depth",
+            "Latitude (deg+veN)": "lat",
+            "Longitude(deg+veE)": "lon",
+            "mon/day/yr": "datetime",
+            "Station": "stationID",
+            "CRUISE ID": "cruiseID"
+        },
+        "additional_columns": {
+            "reference": "10.1002/2015GB005275"
+        },
+        "variables": {
+            "THg [ng/L]": "Hg_T"
+        },
+        "units": {
+            "Hg_T": "ng L-1"
+        },
+        "data_path": "../observations/Bratkic_2016/JC068_mercury_bottle_data.xlsx"
+    },
+    "Cossa_2009": {
+        "metadata": {
+            "Depth [m]": "depth",
+            "Latitude [deg N]": "lat",
+            "Longitude [deg E]": "lon",
+            "Datetime": "datetime",
+            "Station": "stationID",
+            "Cruise": "cruiseID",
+            "Reference": "reference"
+        },
+        "additional_columns": {},
+        "variables": {
+            "HgT [pmol L-1]": "Hg_T"
+        },
+        "units": {
+            "Hg_T": "pmol L-1"
+        },
+        "data_path": "../observations/Cossa_2009/Cossa_2009_observations.xlsx"
+    },
+    "CLIVAR_I5": {
+        "metadata": {
+            "Sample Depth": "depth",
+            "Lat (deg N)": "lat",
+            "Lon (deg E)": "lon",
+            "mon/day/yr": "datetime",
+            "Station": "stationID",
+            "Cruise": "cruiseID"
+        },
+        "additional_columns": {
+            "reference": "unpublished data"
+        },
+        "variables": {
+            "UTHG (ng/L)": "Hg_T",
+            "UMHG (ng/L)": "MeHg_T"
+        },
+        "units": {
+            "Hg_T": "ng L-1",
+            "MeHg_T": "ng L-1"
+        },
+        "data_path": "../observations/UNPUBLISHED/CLIVAR_I5_Hg_Compiled.xlsx"
+    },
+    "GA01": {
+        "metadata": {
+            "DEPTH [m]": "depth",
+            "Latitude [degrees_north]": "lat",
+            "Longitude [degrees_east]": "lon",
+            "yyyy-mm-ddThh:mm:ss.sss": "datetime",
+            "Station:METAVAR:INDEXED_TEXT": "stationID",
+            "Cruise": "cruiseID"
+        },
+        "additional_columns": {},
+        "variables": {
+            "Hg_0_D_CONC_BOTTLE [pmol/kg]": "Hg0_D",
+            "Hg_D_CONC_BOTTLE [pmol/kg]": "Hg_T_D",
+            "Hg_T_CONC_BOTTLE [pmol/kg]": "Hg_T",
+            "Hg_DM_D_CONC_BOTTLE [pmol/kg]": "DMHg_D",
+            "Hg_Me_D_CONC_BOTTLE [pmol/kg]": "MeHg_D",
+            "Hg_MM_D_CONC_BOTTLE [pmol/kg]": "MMHg_D",
+            "Hg_Me_T_CONC_BOTTLE [pmol/kg]": "MeHg_T",
+            "Hg_SPT_CONC_PUMP [pmol/kg]": "Hg_T_P",
+            "Hg_MM_SPT_CONC_PUMP [pmol/kg]": "MeHg_P",
+            "Hg_D_CONC_FISH [pmol/kg]": "Hg_T_D_fish"
+        },
+        "units": {
+            "Hg0_D": "pmol kg-1",
+            "Hg_T_D": "pmol kg-1",
+            "Hg_T": "pmol kg-1",
+            "DMHg_D": "pmol kg-1",
+            "MeHg_D": "pmol kg-1",
+            "MMHg_D": "pmol kg-1",
+            "MeHg_T": "pmol kg-1",
+            "Hg_T_P": "pmol kg-1",
+            "MeHg_P": "pmol kg-1",
+            "Hg_T_D_fish": "pmol kg-1"
+        },
+        "dtype_dict": {
+            "Station:METAVAR:INDEXED_TEXT": "str",
+            "Cruise Aliases:METAVAR:INDEXED_TEXT": "str",
+            "GEOTRACES Sample ID:INDEXED_TEXT": "str",
+            "Cast Identifier:INDEXED_TEXT": "str",
+            "Single-Cell ID:INDEXED_TEXT": "str",
+            "NCBI_Metagenome_BioSample_Accession:INDEXED_TEXT": "str",
+            "NCBI_16S-18S-rRNA-gene_BioSample_Accession:INDEXED_TEXT": "str",
+            "EMBL_EBI_Metagenome_MGNIFY_Analysis_Accession:INDEXED_TEXT": "str"
+        },
+        "data_path": "../observations/GEOTRACES/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2_Hg_subset.csv"
+    },
+    "GApr09": {
+        "metadata": {
+            "DEPTH [m]": "depth",
+            "Latitude [degrees_north]": "lat",
+            "Longitude [degrees_east]": "lon",
+            "yyyy-mm-ddThh:mm:ss.sss": "datetime",
+            "Station:METAVAR:INDEXED_TEXT": "stationID",
+            "Cruise": "cruiseID"
+        },
+        "additional_columns": {},
+        "variables": {
+            "Hg_0_D_CONC_BOTTLE [pmol/kg]": "Hg0_D",
+            "Hg_D_CONC_BOTTLE [pmol/kg]": "Hg_T_D",
+            "Hg_T_CONC_BOTTLE [pmol/kg]": "Hg_T",
+            "Hg_DM_D_CONC_BOTTLE [pmol/kg]": "DMHg_D",
+            "Hg_Me_D_CONC_BOTTLE [pmol/kg]": "MeHg_D",
+            "Hg_MM_D_CONC_BOTTLE [pmol/kg]": "MMHg_D",
+            "Hg_Me_T_CONC_BOTTLE [pmol/kg]": "MeHg_T",
+            "Hg_SPT_CONC_PUMP [pmol/kg]": "Hg_T_P",
+            "Hg_MM_SPT_CONC_PUMP [pmol/kg]": "MeHg_P",
+            "Hg_D_CONC_FISH [pmol/kg]": "Hg_T_D_fish"
+        },
+        "units": {
+            "Hg0_D": "pmol kg-1",
+            "Hg_T_D": "pmol kg-1",
+            "Hg_T": "pmol kg-1",
+            "DMHg_D": "pmol kg-1",
+            "MeHg_D": "pmol kg-1",
+            "MMHg_D": "pmol kg-1",
+            "MeHg_T": "pmol kg-1",
+            "Hg_T_P": "pmol kg-1",
+            "MeHg_P": "pmol kg-1",
+            "Hg_T_D_fish": "pmol kg-1"
+        },
+        "dtype_dict": {
+            "Station:METAVAR:INDEXED_TEXT": "str",
+            "Cruise Aliases:METAVAR:INDEXED_TEXT": "str",
+            "GEOTRACES Sample ID:INDEXED_TEXT": "str",
+            "Cast Identifier:INDEXED_TEXT": "str",
+            "Single-Cell ID:INDEXED_TEXT": "str",
+            "NCBI_Metagenome_BioSample_Accession:INDEXED_TEXT": "str",
+            "NCBI_16S-18S-rRNA-gene_BioSample_Accession:INDEXED_TEXT": "str",
+            "EMBL_EBI_Metagenome_MGNIFY_Analysis_Accession:INDEXED_TEXT": "str"
+        },
+        "data_path": "../observations/GEOTRACES/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2_Hg_subset.csv"
+    },
+    "GIPY06": {
+        "metadata": {
+            "DEPTH [m]": "depth",
+            "Latitude [degrees_north]": "lat",
+            "Longitude [degrees_east]": "lon",
+            "yyyy-mm-ddThh:mm:ss.sss": "datetime",
+            "Station:METAVAR:INDEXED_TEXT": "stationID",
+            "Cruise": "cruiseID"
+        },
+        "additional_columns": {},
+        "variables": {
+            "Hg_0_D_CONC_BOTTLE [pmol/kg]": "Hg0_D",
+            "Hg_D_CONC_BOTTLE [pmol/kg]": "Hg_T_D",
+            "Hg_T_CONC_BOTTLE [pmol/kg]": "Hg_T",
+            "Hg_DM_D_CONC_BOTTLE [pmol/kg]": "DMHg_D",
+            "Hg_Me_D_CONC_BOTTLE [pmol/kg]": "MeHg_D",
+            "Hg_MM_D_CONC_BOTTLE [pmol/kg]": "MMHg_D",
+            "Hg_Me_T_CONC_BOTTLE [pmol/kg]": "MeHg_T",
+            "Hg_SPT_CONC_PUMP [pmol/kg]": "Hg_T_P",
+            "Hg_MM_SPT_CONC_PUMP [pmol/kg]": "MeHg_P",
+            "Hg_D_CONC_FISH [pmol/kg]": "Hg_T_D_fish"
+        },
+        "units": {
+            "Hg0_D": "pmol kg-1",
+            "Hg_T_D": "pmol kg-1",
+            "Hg_T": "pmol kg-1",
+            "DMHg_D": "pmol kg-1",
+            "MeHg_D": "pmol kg-1",
+            "MMHg_D": "pmol kg-1",
+            "MeHg_T": "pmol kg-1",
+            "Hg_T_P": "pmol kg-1",
+            "MeHg_P": "pmol kg-1",
+            "Hg_T_D_fish": "pmol kg-1"
+        },
+        "dtype_dict": {
+            "Station:METAVAR:INDEXED_TEXT": "str",
+            "Cruise Aliases:METAVAR:INDEXED_TEXT": "str",
+            "GEOTRACES Sample ID:INDEXED_TEXT": "str",
+            "Cast Identifier:INDEXED_TEXT": "str",
+            "Single-Cell ID:INDEXED_TEXT": "str",
+            "NCBI_Metagenome_BioSample_Accession:INDEXED_TEXT": "str",
+            "NCBI_16S-18S-rRNA-gene_BioSample_Accession:INDEXED_TEXT": "str",
+            "EMBL_EBI_Metagenome_MGNIFY_Analysis_Accession:INDEXED_TEXT": "str"
+        },
+        "data_path": "../observations/GEOTRACES/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2_Hg_subset.csv"
+    },
+    "GN02": {
+        "metadata": {
+            "DEPTH [m]": "depth",
+            "Latitude [degrees_north]": "lat",
+            "Longitude [degrees_east]": "lon",
+            "yyyy-mm-ddThh:mm:ss.sss": "datetime",
+            "Station:METAVAR:INDEXED_TEXT": "stationID",
+            "Cruise": "cruiseID"
+        },
+        "additional_columns": {},
+        "variables": {
+            "Hg_0_D_CONC_BOTTLE [pmol/kg]": "Hg0_D",
+            "Hg_D_CONC_BOTTLE [pmol/kg]": "Hg_T_D",
+            "Hg_T_CONC_BOTTLE [pmol/kg]": "Hg_T",
+            "Hg_DM_D_CONC_BOTTLE [pmol/kg]": "DMHg_D",
+            "Hg_Me_D_CONC_BOTTLE [pmol/kg]": "MeHg_D",
+            "Hg_MM_D_CONC_BOTTLE [pmol/kg]": "MMHg_D",
+            "Hg_Me_T_CONC_BOTTLE [pmol/kg]": "MeHg_T",
+            "Hg_SPT_CONC_PUMP [pmol/kg]": "Hg_T_P",
+            "Hg_MM_SPT_CONC_PUMP [pmol/kg]": "MeHg_P",
+            "Hg_D_CONC_FISH [pmol/kg]": "Hg_T_D_fish"
+        },
+        "units": {
+            "Hg0_D": "pmol kg-1",
+            "Hg_T_D": "pmol kg-1",
+            "Hg_T": "pmol kg-1",
+            "DMHg_D": "pmol kg-1",
+            "MeHg_D": "pmol kg-1",
+            "MMHg_D": "pmol kg-1",
+            "MeHg_T": "pmol kg-1",
+            "Hg_T_P": "pmol kg-1",
+            "MeHg_P": "pmol kg-1",
+            "Hg_T_D_fish": "pmol kg-1"
+        },
+        "dtype_dict": {
+            "Station:METAVAR:INDEXED_TEXT": "str",
+            "Cruise Aliases:METAVAR:INDEXED_TEXT": "str",
+            "GEOTRACES Sample ID:INDEXED_TEXT": "str",
+            "Cast Identifier:INDEXED_TEXT": "str",
+            "Single-Cell ID:INDEXED_TEXT": "str",
+            "NCBI_Metagenome_BioSample_Accession:INDEXED_TEXT": "str",
+            "NCBI_16S-18S-rRNA-gene_BioSample_Accession:INDEXED_TEXT": "str",
+            "EMBL_EBI_Metagenome_MGNIFY_Analysis_Accession:INDEXED_TEXT": "str"
+        },
+        "data_path": "../observations/GEOTRACES/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2_Hg_subset.csv"
+    },
+    "GN03": {
+        "metadata": {
+            "DEPTH [m]": "depth",
+            "Latitude [degrees_north]": "lat",
+            "Longitude [degrees_east]": "lon",
+            "yyyy-mm-ddThh:mm:ss.sss": "datetime",
+            "Station:METAVAR:INDEXED_TEXT": "stationID",
+            "Cruise": "cruiseID"
+        },
+        "additional_columns": {},
+        "variables": {
+            "Hg_0_D_CONC_BOTTLE [pmol/kg]": "Hg0_D",
+            "Hg_D_CONC_BOTTLE [pmol/kg]": "Hg_T_D",
+            "Hg_T_CONC_BOTTLE [pmol/kg]": "Hg_T",
+            "Hg_DM_D_CONC_BOTTLE [pmol/kg]": "DMHg_D",
+            "Hg_Me_D_CONC_BOTTLE [pmol/kg]": "MeHg_D",
+            "Hg_MM_D_CONC_BOTTLE [pmol/kg]": "MMHg_D",
+            "Hg_Me_T_CONC_BOTTLE [pmol/kg]": "MeHg_T",
+            "Hg_SPT_CONC_PUMP [pmol/kg]": "Hg_T_P",
+            "Hg_MM_SPT_CONC_PUMP [pmol/kg]": "MeHg_P",
+            "Hg_D_CONC_FISH [pmol/kg]": "Hg_T_D_fish"
+        },
+        "units": {
+            "Hg0_D": "pmol kg-1",
+            "Hg_T_D": "pmol kg-1",
+            "Hg_T": "pmol kg-1",
+            "DMHg_D": "pmol kg-1",
+            "MeHg_D": "pmol kg-1",
+            "MMHg_D": "pmol kg-1",
+            "MeHg_T": "pmol kg-1",
+            "Hg_T_P": "pmol kg-1",
+            "MeHg_P": "pmol kg-1",
+            "Hg_T_D_fish": "pmol kg-1"
+        },
+        "dtype_dict": {
+            "Station:METAVAR:INDEXED_TEXT": "str",
+            "Cruise Aliases:METAVAR:INDEXED_TEXT": "str",
+            "GEOTRACES Sample ID:INDEXED_TEXT": "str",
+            "Cast Identifier:INDEXED_TEXT": "str",
+            "Single-Cell ID:INDEXED_TEXT": "str",
+            "NCBI_Metagenome_BioSample_Accession:INDEXED_TEXT": "str",
+            "NCBI_16S-18S-rRNA-gene_BioSample_Accession:INDEXED_TEXT": "str",
+            "EMBL_EBI_Metagenome_MGNIFY_Analysis_Accession:INDEXED_TEXT": "str"
+        },
+        "data_path": "../observations/GEOTRACES/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2_Hg_subset.csv"
+    },
+    "GN04": {
+        "metadata": {
+            "DEPTH [m]": "depth",
+            "Latitude [degrees_north]": "lat",
+            "Longitude [degrees_east]": "lon",
+            "yyyy-mm-ddThh:mm:ss.sss": "datetime",
+            "Station:METAVAR:INDEXED_TEXT": "stationID",
+            "Cruise": "cruiseID"
+        },
+        "additional_columns": {},
+        "variables": {
+            "Hg_0_D_CONC_BOTTLE [pmol/kg]": "Hg0_D",
+            "Hg_D_CONC_BOTTLE [pmol/kg]": "Hg_T_D",
+            "Hg_T_CONC_BOTTLE [pmol/kg]": "Hg_T",
+            "Hg_DM_D_CONC_BOTTLE [pmol/kg]": "DMHg_D",
+            "Hg_Me_D_CONC_BOTTLE [pmol/kg]": "MeHg_D",
+            "Hg_MM_D_CONC_BOTTLE [pmol/kg]": "MMHg_D",
+            "Hg_Me_T_CONC_BOTTLE [pmol/kg]": "MeHg_T",
+            "Hg_SPT_CONC_PUMP [pmol/kg]": "Hg_T_P",
+            "Hg_MM_SPT_CONC_PUMP [pmol/kg]": "MeHg_P",
+            "Hg_D_CONC_FISH [pmol/kg]": "Hg_T_D_fish"
+        },
+        "units": {
+            "Hg0_D": "pmol kg-1",
+            "Hg_T_D": "pmol kg-1",
+            "Hg_T": "pmol kg-1",
+            "DMHg_D": "pmol kg-1",
+            "MeHg_D": "pmol kg-1",
+            "MMHg_D": "pmol kg-1",
+            "MeHg_T": "pmol kg-1",
+            "Hg_T_P": "pmol kg-1",
+            "MeHg_P": "pmol kg-1",
+            "Hg_T_D_fish": "pmol kg-1"
+        },
+        "dtype_dict": {
+            "Station:METAVAR:INDEXED_TEXT": "str",
+            "Cruise Aliases:METAVAR:INDEXED_TEXT": "str",
+            "GEOTRACES Sample ID:INDEXED_TEXT": "str",
+            "Cast Identifier:INDEXED_TEXT": "str",
+            "Single-Cell ID:INDEXED_TEXT": "str",
+            "NCBI_Metagenome_BioSample_Accession:INDEXED_TEXT": "str",
+            "NCBI_16S-18S-rRNA-gene_BioSample_Accession:INDEXED_TEXT": "str",
+            "EMBL_EBI_Metagenome_MGNIFY_Analysis_Accession:INDEXED_TEXT": "str"
+        },
+        "data_path": "../observations/GEOTRACES/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2_Hg_subset.csv"
+    },
+    "GN05": {
+        "metadata": {
+            "DEPTH [m]": "depth",
+            "Latitude [degrees_north]": "lat",
+            "Longitude [degrees_east]": "lon",
+            "yyyy-mm-ddThh:mm:ss.sss": "datetime",
+            "Station:METAVAR:INDEXED_TEXT": "stationID",
+            "Cruise": "cruiseID"
+        },
+        "additional_columns": {},
+        "variables": {
+            "Hg_0_D_CONC_BOTTLE [pmol/kg]": "Hg0_D",
+            "Hg_D_CONC_BOTTLE [pmol/kg]": "Hg_T_D",
+            "Hg_T_CONC_BOTTLE [pmol/kg]": "Hg_T",
+            "Hg_DM_D_CONC_BOTTLE [pmol/kg]": "DMHg_D",
+            "Hg_Me_D_CONC_BOTTLE [pmol/kg]": "MeHg_D",
+            "Hg_MM_D_CONC_BOTTLE [pmol/kg]": "MMHg_D",
+            "Hg_Me_T_CONC_BOTTLE [pmol/kg]": "MeHg_T",
+            "Hg_SPT_CONC_PUMP [pmol/kg]": "Hg_T_P",
+            "Hg_MM_SPT_CONC_PUMP [pmol/kg]": "MeHg_P",
+            "Hg_D_CONC_FISH [pmol/kg]": "Hg_T_D_fish"
+        },
+        "units": {
+            "Hg0_D": "pmol kg-1",
+            "Hg_T_D": "pmol kg-1",
+            "Hg_T": "pmol kg-1",
+            "DMHg_D": "pmol kg-1",
+            "MeHg_D": "pmol kg-1",
+            "MMHg_D": "pmol kg-1",
+            "MeHg_T": "pmol kg-1",
+            "Hg_T_P": "pmol kg-1",
+            "MeHg_P": "pmol kg-1",
+            "Hg_T_D_fish": "pmol kg-1"
+        },
+        "dtype_dict": {
+            "Station:METAVAR:INDEXED_TEXT": "str",
+            "Cruise Aliases:METAVAR:INDEXED_TEXT": "str",
+            "GEOTRACES Sample ID:INDEXED_TEXT": "str",
+            "Cast Identifier:INDEXED_TEXT": "str",
+            "Single-Cell ID:INDEXED_TEXT": "str",
+            "NCBI_Metagenome_BioSample_Accession:INDEXED_TEXT": "str",
+            "NCBI_16S-18S-rRNA-gene_BioSample_Accession:INDEXED_TEXT": "str",
+            "EMBL_EBI_Metagenome_MGNIFY_Analysis_Accession:INDEXED_TEXT": "str"
+        },
+        "data_path": "../observations/GEOTRACES/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2_Hg_subset.csv"
+    },
+    "GA03": {
+        "metadata": {
+            "DEPTH [m]": "depth",
+            "Latitude [degrees_north]": "lat",
+            "Longitude [degrees_east]": "lon",
+            "yyyy-mm-ddThh:mm:ss.sss": "datetime",
+            "Station:METAVAR:INDEXED_TEXT": "stationID",
+            "Cruise": "cruiseID"
+        },
+        "additional_columns": {},
+        "variables": {
+            "Hg_0_D_CONC_BOTTLE [pmol/kg]": "Hg0_D",
+            "Hg_D_CONC_BOTTLE [pmol/kg]": "Hg_T_D",
+            "Hg_T_CONC_BOTTLE [pmol/kg]": "Hg_T",
+            "Hg_DM_D_CONC_BOTTLE [pmol/kg]": "DMHg_D",
+            "Hg_Me_D_CONC_BOTTLE [pmol/kg]": "MeHg_D",
+            "Hg_MM_D_CONC_BOTTLE [pmol/kg]": "MMHg_D",
+            "Hg_Me_T_CONC_BOTTLE [pmol/kg]": "MeHg_T",
+            "Hg_SPT_CONC_PUMP [pmol/kg]": "Hg_T_P",
+            "Hg_MM_SPT_CONC_PUMP [pmol/kg]": "MeHg_P",
+            "Hg_D_CONC_FISH [pmol/kg]": "Hg_T_D_fish"
+        },
+        "units": {
+            "Hg0_D": "pmol kg-1",
+            "Hg_T_D": "pmol kg-1",
+            "Hg_T": "pmol kg-1",
+            "DMHg_D": "pmol kg-1",
+            "MeHg_D": "pmol kg-1",
+            "MMHg_D": "pmol kg-1",
+            "MeHg_T": "pmol kg-1",
+            "Hg_T_P": "pmol kg-1",
+            "MeHg_P": "pmol kg-1",
+            "Hg_T_D_fish": "pmol kg-1"
+        },
+        "dtype_dict": {
+            "Station:METAVAR:INDEXED_TEXT": "str",
+            "Cruise Aliases:METAVAR:INDEXED_TEXT": "str",
+            "GEOTRACES Sample ID:INDEXED_TEXT": "str",
+            "Cast Identifier:INDEXED_TEXT": "str",
+            "Single-Cell ID:INDEXED_TEXT": "str",
+            "NCBI_Metagenome_BioSample_Accession:INDEXED_TEXT": "str",
+            "NCBI_16S-18S-rRNA-gene_BioSample_Accession:INDEXED_TEXT": "str",
+            "EMBL_EBI_Metagenome_MGNIFY_Analysis_Accession:INDEXED_TEXT": "str"
+        },
+        "data_path": "../observations/GEOTRACES/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2_Hg_subset.csv"
+    },
+    "GA04N": {
+        "metadata": {
+            "DEPTH [m]": "depth",
+            "Latitude [degrees_north]": "lat",
+            "Longitude [degrees_east]": "lon",
+            "yyyy-mm-ddThh:mm:ss.sss": "datetime",
+            "Station:METAVAR:INDEXED_TEXT": "stationID",
+            "Cruise": "cruiseID"
+        },
+        "additional_columns": {},
+        "variables": {
+            "Hg_0_D_CONC_BOTTLE [pmol/kg]": "Hg0_D",
+            "Hg_D_CONC_BOTTLE [pmol/kg]": "Hg_T_D",
+            "Hg_T_CONC_BOTTLE [pmol/kg]": "Hg_T",
+            "Hg_DM_D_CONC_BOTTLE [pmol/kg]": "DMHg_D",
+            "Hg_Me_D_CONC_BOTTLE [pmol/kg]": "MeHg_D",
+            "Hg_MM_D_CONC_BOTTLE [pmol/kg]": "MMHg_D",
+            "Hg_Me_T_CONC_BOTTLE [pmol/kg]": "MeHg_T",
+            "Hg_SPT_CONC_PUMP [pmol/kg]": "Hg_T_P",
+            "Hg_MM_SPT_CONC_PUMP [pmol/kg]": "MeHg_P",
+            "Hg_D_CONC_FISH [pmol/kg]": "Hg_T_D_fish"
+        },
+        "units": {
+            "Hg0_D": "pmol kg-1",
+            "Hg_T_D": "pmol kg-1",
+            "Hg_T": "pmol kg-1",
+            "DMHg_D": "pmol kg-1",
+            "MeHg_D": "pmol kg-1",
+            "MMHg_D": "pmol kg-1",
+            "MeHg_T": "pmol kg-1",
+            "Hg_T_P": "pmol kg-1",
+            "MeHg_P": "pmol kg-1",
+            "Hg_T_D_fish": "pmol kg-1"
+        },
+        "dtype_dict": {
+            "Station:METAVAR:INDEXED_TEXT": "str",
+            "Cruise Aliases:METAVAR:INDEXED_TEXT": "str",
+            "GEOTRACES Sample ID:INDEXED_TEXT": "str",
+            "Cast Identifier:INDEXED_TEXT": "str",
+            "Single-Cell ID:INDEXED_TEXT": "str",
+            "NCBI_Metagenome_BioSample_Accession:INDEXED_TEXT": "str",
+            "NCBI_16S-18S-rRNA-gene_BioSample_Accession:INDEXED_TEXT": "str",
+            "EMBL_EBI_Metagenome_MGNIFY_Analysis_Accession:INDEXED_TEXT": "str"
+        },
+        "data_path": "../observations/GEOTRACES/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2_Hg_subset.csv"
+    },
+    "GN01": {
+        "metadata": {
+            "DEPTH [m]": "depth",
+            "Latitude [degrees_north]": "lat",
+            "Longitude [degrees_east]": "lon",
+            "yyyy-mm-ddThh:mm:ss.sss": "datetime",
+            "Station:METAVAR:INDEXED_TEXT": "stationID",
+            "Cruise": "cruiseID"
+        },
+        "additional_columns": {},
+        "variables": {
+            "Hg_0_D_CONC_BOTTLE [pmol/kg]": "Hg0_D",
+            "Hg_D_CONC_BOTTLE [pmol/kg]": "Hg_T_D",
+            "Hg_T_CONC_BOTTLE [pmol/kg]": "Hg_T",
+            "Hg_DM_D_CONC_BOTTLE [pmol/kg]": "DMHg_D",
+            "Hg_Me_D_CONC_BOTTLE [pmol/kg]": "MeHg_D",
+            "Hg_MM_D_CONC_BOTTLE [pmol/kg]": "MMHg_D",
+            "Hg_Me_T_CONC_BOTTLE [pmol/kg]": "MeHg_T",
+            "Hg_SPT_CONC_PUMP [pmol/kg]": "Hg_T_P",
+            "Hg_MM_SPT_CONC_PUMP [pmol/kg]": "MeHg_P",
+            "Hg_D_CONC_FISH [pmol/kg]": "Hg_T_D_fish"
+        },
+        "units": {
+            "Hg0_D": "pmol kg-1",
+            "Hg_T_D": "pmol kg-1",
+            "Hg_T": "pmol kg-1",
+            "DMHg_D": "pmol kg-1",
+            "MeHg_D": "pmol kg-1",
+            "MMHg_D": "pmol kg-1",
+            "MeHg_T": "pmol kg-1",
+            "Hg_T_P": "pmol kg-1",
+            "MeHg_P": "pmol kg-1",
+            "Hg_T_D_fish": "pmol kg-1"
+        },
+        "dtype_dict": {
+            "Station:METAVAR:INDEXED_TEXT": "str",
+            "Cruise Aliases:METAVAR:INDEXED_TEXT": "str",
+            "GEOTRACES Sample ID:INDEXED_TEXT": "str",
+            "Cast Identifier:INDEXED_TEXT": "str",
+            "Single-Cell ID:INDEXED_TEXT": "str",
+            "NCBI_Metagenome_BioSample_Accession:INDEXED_TEXT": "str",
+            "NCBI_16S-18S-rRNA-gene_BioSample_Accession:INDEXED_TEXT": "str",
+            "EMBL_EBI_Metagenome_MGNIFY_Analysis_Accession:INDEXED_TEXT": "str"
+        },
+        "data_path": "../observations/GEOTRACES/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2_Hg_subset.csv"
+    },
+    "GP12": {
+        "metadata": {
+            "DEPTH [m]": "depth",
+            "Latitude [degrees_north]": "lat",
+            "Longitude [degrees_east]": "lon",
+            "yyyy-mm-ddThh:mm:ss.sss": "datetime",
+            "Station:METAVAR:INDEXED_TEXT": "stationID",
+            "Cruise": "cruiseID"
+        },
+        "additional_columns": {},
+        "variables": {
+            "Hg_0_D_CONC_BOTTLE [pmol/kg]": "Hg0_D",
+            "Hg_D_CONC_BOTTLE [pmol/kg]": "Hg_T_D",
+            "Hg_T_CONC_BOTTLE [pmol/kg]": "Hg_T",
+            "Hg_DM_D_CONC_BOTTLE [pmol/kg]": "DMHg_D",
+            "Hg_Me_D_CONC_BOTTLE [pmol/kg]": "MeHg_D",
+            "Hg_MM_D_CONC_BOTTLE [pmol/kg]": "MMHg_D",
+            "Hg_Me_T_CONC_BOTTLE [pmol/kg]": "MeHg_T",
+            "Hg_SPT_CONC_PUMP [pmol/kg]": "Hg_T_P",
+            "Hg_MM_SPT_CONC_PUMP [pmol/kg]": "MeHg_P",
+            "Hg_D_CONC_FISH [pmol/kg]": "Hg_T_D_fish"
+        },
+        "units": {
+            "Hg0_D": "pmol kg-1",
+            "Hg_T_D": "pmol kg-1",
+            "Hg_T": "pmol kg-1",
+            "DMHg_D": "pmol kg-1",
+            "MeHg_D": "pmol kg-1",
+            "MMHg_D": "pmol kg-1",
+            "MeHg_T": "pmol kg-1",
+            "Hg_T_P": "pmol kg-1",
+            "MeHg_P": "pmol kg-1",
+            "Hg_T_D_fish": "pmol kg-1"
+        },
+        "dtype_dict": {
+            "Station:METAVAR:INDEXED_TEXT": "str",
+            "Cruise Aliases:METAVAR:INDEXED_TEXT": "str",
+            "GEOTRACES Sample ID:INDEXED_TEXT": "str",
+            "Cast Identifier:INDEXED_TEXT": "str",
+            "Single-Cell ID:INDEXED_TEXT": "str",
+            "NCBI_Metagenome_BioSample_Accession:INDEXED_TEXT": "str",
+            "NCBI_16S-18S-rRNA-gene_BioSample_Accession:INDEXED_TEXT": "str",
+            "EMBL_EBI_Metagenome_MGNIFY_Analysis_Accession:INDEXED_TEXT": "str"
+        },
+        "data_path": "../observations/GEOTRACES/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2_Hg_subset.csv"
+    },
+    "GP16": {
+        "metadata": {
+            "DEPTH [m]": "depth",
+            "Latitude [degrees_north]": "lat",
+            "Longitude [degrees_east]": "lon",
+            "yyyy-mm-ddThh:mm:ss.sss": "datetime",
+            "Station:METAVAR:INDEXED_TEXT": "stationID",
+            "Cruise": "cruiseID"
+        },
+        "additional_columns": {},
+        "variables": {
+            "Hg_0_D_CONC_BOTTLE [pmol/kg]": "Hg0_D",
+            "Hg_D_CONC_BOTTLE [pmol/kg]": "Hg_T_D",
+            "Hg_T_CONC_BOTTLE [pmol/kg]": "Hg_T",
+            "Hg_DM_D_CONC_BOTTLE [pmol/kg]": "DMHg_D",
+            "Hg_Me_D_CONC_BOTTLE [pmol/kg]": "MeHg_D",
+            "Hg_MM_D_CONC_BOTTLE [pmol/kg]": "MMHg_D",
+            "Hg_Me_T_CONC_BOTTLE [pmol/kg]": "MeHg_T",
+            "Hg_SPT_CONC_PUMP [pmol/kg]": "Hg_T_P",
+            "Hg_MM_SPT_CONC_PUMP [pmol/kg]": "MeHg_P",
+            "Hg_D_CONC_FISH [pmol/kg]": "Hg_T_D_fish"
+        },
+        "units": {
+            "Hg0_D": "pmol kg-1",
+            "Hg_T_D": "pmol kg-1",
+            "Hg_T": "pmol kg-1",
+            "DMHg_D": "pmol kg-1",
+            "MeHg_D": "pmol kg-1",
+            "MMHg_D": "pmol kg-1",
+            "MeHg_T": "pmol kg-1",
+            "Hg_T_P": "pmol kg-1",
+            "MeHg_P": "pmol kg-1",
+            "Hg_T_D_fish": "pmol kg-1"
+        },
+        "dtype_dict": {
+            "Station:METAVAR:INDEXED_TEXT": "str",
+            "Cruise Aliases:METAVAR:INDEXED_TEXT": "str",
+            "GEOTRACES Sample ID:INDEXED_TEXT": "str",
+            "Cast Identifier:INDEXED_TEXT": "str",
+            "Single-Cell ID:INDEXED_TEXT": "str",
+            "NCBI_Metagenome_BioSample_Accession:INDEXED_TEXT": "str",
+            "NCBI_16S-18S-rRNA-gene_BioSample_Accession:INDEXED_TEXT": "str",
+            "EMBL_EBI_Metagenome_MGNIFY_Analysis_Accession:INDEXED_TEXT": "str"
+        },
+        "data_path": "../observations/GEOTRACES/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2/GEOTRACES_IDP2021_Seawater_Discrete_Sample_Data_v2_Hg_subset.csv"
+    },
+    "GEOTRACES_Intercalibration": {
+        "metadata": {
+            "Depth [m]": "depth",
+            "Lat [deg N]": "lat",
+            "Lon [deg E]": "lon",
+            "Sampling Date": "datetime",
+            "Station Name": "stationID",
+            "cruiseID": "cruiseID",
+            "reference": "reference"
+        },
+        "additional_columns": {},
+        "variables": {
+            "dissolved total Hg [pM]": "Hg_T_D"
+        },
+        "units": {
+            "Hg_T_D": "pmol L-1"
+        },
+        "data_path": "../observations/GEOTRACES_Intercalibration/GEOTRACES_Intercalibration.xlsx"
+    },
+    "Kirk_2008": {
+        "metadata": {
+            "Depth [m]": "depth",
+            "Latitude [deg N]": "lat",
+            "Longitude [deg E]": "lon",
+            "Sampling Date": "datetime",
+            "Station Number": "stationID",
+            "CruiseID": "cruiseID",
+            "Reference": "reference"
+        },
+        "additional_columns": {},
+        "variables": {
+            "THg [ng L-1]": "Hg_T",
+            "GEM [pg L-1]": "Hg0_T",
+            "MMHg [pg L-1]": "MMHg_T",
+            "DMHg [pg L-1]": "DMHg_T"
+        },
+        "units": {
+            "Hg_T": "ng L-1",
+            "Hg0_T": "pg L-1",
+            "MMHg_T": "pg L-1",
+            "DMHg_T": "pg L-1"
+        },
+        "data_path": "../observations/Kirk_2008/Kirk_2008.xlsx"
+    },
+    "IOC": {
+        "metadata": {
+            "Depth": "depth",
+            "Lat [deg N]": "lat",
+            "Lon [deg E]": "lon",
+            "Datetime": "datetime",
+            "station_num": "stationID",
+            "cruiseID": "cruiseID",
+            "reference": "reference"
+        },
+        "additional_columns": {
+            "MDL": "MDL",
+            "RSD": "RSD"
+        },
+        "variables": {
+            "HgT_Conc_pM": "Hg_T"
+        },
+        "units": {
+            "Hg_T": "pmol L-1"
+        },
+        "data_path": "../observations/Laurier_2004/Laurier_2004.xlsx"
+    },
+    "CLIVAR_2011_SO": {
+        "metadata": {
+            "Depth": "depth",
+            "Lat [deg N]": "lat",
+            "Lon [deg E]": "lon",
+            "Datetime": "datetime",
+            "station_num": "stationID",
+            "cruiseID": "cruiseID",
+            "reference": "reference"
+        },
+        "additional_columns": {},
+        "variables": {
+            "HgT_Conc_pM": "Hg_T"
+        },
+        "units": {
+            "Hg_T": "pmol L-1"
+        },
+        "data_path": "../observations/UNPUBLISHED/CLIVAR_2011_Southern_Ocean.xlsx"
+    },
+    "A16N": {
+        "metadata": {
+            "Depth": "depth",
+            "Lat [deg N]": "lat",
+            "Lon [deg E]": "lon",
+            "Datetime": "datetime",
+            "station_num": "stationID",
+            "cruiseID": "cruiseID",
+            "reference": "reference"
+        },
+        "additional_columns": {},
+        "variables": {
+            "HgT_Conc_pM": "Hg_T"
+        },
+        "units": {
+            "Hg_T": "pmol L-1"
+        },
+        "data_path": "../observations/UNPUBLISHED/CLIVAR_2013_Atlantic_A16N.xlsx"
+    }
+}

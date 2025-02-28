@@ -1,0 +1,8 @@
+*.DS_Store*
+*.pyc*
+*test_space.ipynb*
+output/main*
+output/sensitivity*
+output/time_attribution*
+output/attribution*
+profiles/observations*

@@ -1,0 +1,19 @@
+name: pyboxey_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - conda-forge::ipykernel==6.29
+  - conda-forge::numpy=1.23
+  - conda-forge::pandas==1.5
+  - conda-forge::xarray==2022.11
+  - conda-forge::matplotlib==3.8.3
+  - conda-forge::scipy==1.10
+  - conda-forge::acgc=0.3.1
+  - conda-forge::geopandas
+  - conda-forge::xlrd
+  - conda-forge::openpyxl
+  - conda-forge::dask
+  - pip
+  - pip: 
+    - git+https://github.com/SunderlandLab/boxey.git
